@@ -3,8 +3,8 @@ package cls;
 public class Constructor2 {
 public static void main(String[] args) {
 	//멤버변수(private :이름. 나이)
-	Person p1 = new Person(11,"abc");
-	Person p2 = new Person(21,"def");
+	Person p1 = new Person("abc",21);
+	Person p2 = new Person("def",11);
 	
 	PersonView pv1 = new PersonView();
 	PersonView pv2 = new PersonView(p2);
@@ -19,16 +19,14 @@ public static void main(String[] args) {
 
 class Person{	
 	//생성자(public) : 생성자 통해서 멤버변수 초기화
-	public Person(int age, String name) {
-	}
 	
 	//멤버변수: 이름,나이
 	private String name;
 	private int age;
 	
 	public Person(String name, int age) {
-		this.name = this.name;
-		this.age = this.age;
+		this.name = name;
+		this.age = age;
 	}
 	
 	//게터세터(public)

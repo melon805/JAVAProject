@@ -1,0 +1,17 @@
+package inter;
+
+public interface Review3 {
+//상속용 클래스 -> 인터페이스
+// 인터페이스 : 상속 또는 메서드의 선언부(소과호까지)만 올 수 있음
+
+	final static String str= "Review3 InterFace"; //상수 : Final 한번 정하면 못바꿈
+	String str2 ="final static이 생략되어 있음"; // 자료형 앞에 final static 이 자동생략
+	
+	public void test1(); 
+	 //{} 없이 메서드 선언까지만
+	public void test2(); 
+	 // 상속밭은 곳에서 반드시 오버리이딩으로 {}을 구현해줘야 함
+	
+	
+
+}
